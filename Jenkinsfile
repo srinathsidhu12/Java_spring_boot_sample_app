@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_REPO = "srinathsidhu12/springboot-demo"
+        DOCKER_HUB_REPO = "srinathsidhu12/java_spring_boot_sample_app"
         IMAGE_TAG = "${BUILD_NUMBER}"
         K8S_DEPLOYMENT_NAME = "springboot-demo"
     }
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/srinathsidhu12/Spring_boot_app_jenkins_deployment.git'	
+                git 'https://github.com/srinathsidhu12/Jave_spring_boot_sample_app.git'	
             }
         }
         stage('Check Java') {
