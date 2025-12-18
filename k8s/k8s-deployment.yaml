@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-demo
-          image: srinathsidhu12/java_spring_boot_sample_app:18
+          image: srinathsidhu12/java_spring_boot_sample_app:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
